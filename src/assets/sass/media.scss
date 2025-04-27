@@ -1,0 +1,59 @@
+@media (max-width:1140px) {
+    .intro{
+        height: 650px;
+    }
+}
+@media (max-width:1200px) {
+    .intro{
+        height: 600px;
+    }
+}
+@media (max-width:1000px) {
+    .intro{
+        height: 500px;
+        &_title{
+            text-align: center;
+            font-style: 50px;
+            line-height: 100%;
+        }
+        &_text{
+            text-align: center;
+            margin: 20px auto;
+        }
+        &_btns{
+            justify-content: center;
+
+        }
+    }
+    .btn{
+        padding: 15px 40px;
+    }
+    .header{
+        &_top{
+            padding: 15px 0;
+            & img{
+                width: 40px;
+            }
+        }
+    }
+    .nav{
+        &_link span{
+            padding: 35px 6px;
+        }
+    }
+}
+@media (max-width:800px) {
+    .intro{
+        height: 400px;
+    }
+}
+@media (max-width:600px) {
+    .intro{
+        height: 300px;
+    }
+}
+@media (max-width:400px) {
+    .intro{
+        height: 200px;
+    }
+}
