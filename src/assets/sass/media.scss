@@ -1,59 +1,463 @@
-@media (max-width:1140px) {
-    .intro{
-        height: 650px;
+@media(max-width:1440px) {
+    .intro {
+        height: 640px;
+    }
+
+    .widow {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 40.64%, rgba(255, 255, 255, 0) 100.72%);
     }
 }
-@media (max-width:1200px) {
-    .intro{
+
+@media(max-width:1200px) {
+    .intro {
         height: 600px;
     }
 }
-@media (max-width:1000px) {
-    .intro{
-        height: 500px;
-        &_title{
-            text-align: center;
-            font-style: 50px;
-            line-height: 100%;
-        }
-        &_text{
-            text-align: center;
-            margin: 20px auto;
-        }
-        &_btns{
-            justify-content: center;
 
-        }
+@media(max-width:1140px) {
+    .widow {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 30.64%, rgba(255, 255, 255, 0) 100.72%);
     }
-    .btn{
+    .film_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 540px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .film_card {
+        height: 350px;
+    }
+    .title {
+        margin: 25px auto;
+    }
+    .series_box{
+        max-width: 540px;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width:1000px) {
+    .game{
+        height: 400px;
+        gap: 20px;
+    }
+    .intro {
+        height: 500px;
+    }
+    .intro_title {
+        text-align: center;
+        font-size: 50px;
+        line-height: 100%;
+    }
+    .intro_text {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .intro_btns {
+        justify-content: center;
+    }
+
+    .btn {
         padding: 15px 40px;
     }
-    .header{
-        &_top{
-            padding: 15px 0;
-            & img{
-                width: 40px;
-            }
-        }
+
+    .header_top {
+        padding: 15px 0;
     }
-    .nav{
-        &_link span{
-            padding: 35px 6px;
-        }
+
+    .header_top_img {
+        width: 40px;
+    }
+
+    .nav_link span {
+        padding: 35px 6px;
     }
 }
-@media (max-width:800px) {
-    .intro{
+
+@media(max-width:950px) {
+    .collect_box {
+        gap: 20px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .collect_card {
+        flex-shrink: 0;
+        width: 280px;
+        height: 170px;
+        gap: 10px;
+    }
+    .collect_play img{
+        width: 35px;
+    }
+    .collect_title{
+        font-size: 18px;
+    }
+    .collect_left,
+    .collect_right {
+        height: 156px;
+    }
+    .collect_play,.collect_title{
+        transform: unset;
+    }
+    .collect_card:hover .collect_play,
+    .collect_card:hover .collect_left,
+    .collect_card:hover .collect_right,
+    .collect_card:hover .collect_img{
+        transform: unset;
+    }
+    .collect_card:hover{
+        box-shadow: unset;
+    }
+    .widow {
+        background: rgba(255, 255, 255, 0.7);
+        text-align: center;
+    }
+
+    .widow_text {
+        margin: 30px auto;
+        text-align: center;
+    }
+}
+
+@media(max-width:800px) {
+    .game{
+        height: 350px;
+    }
+    .game_title{
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .widow {
+        height: 450px;
+    }
+
+    .widow_title {
+        width: 380px;
+    }
+
+    .widow_text {
+        margin: 20px auto;
+    }
+
+    .title {
+        margin: 15px auto;
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    .film_box {
+        max-width: 490px;
+        gap: 20px;
+    }
+
+    .film_card {
+        width: 230px;
+        height: 300px;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .film_text {
+        line-height: 130%;
+    }
+
+    .film_play img {
+        width: 35px;
+    }
+
+    .film_title {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .film_title,
+    .film_text,
+    .film_play,
+    .film_time {
+        transform: none;
+    }
+
+    .film_card:hover {
+        box-shadow: unset;
+    }
+
+    .film_card:hover .film_play {
+        transform: unset;
+    }
+
+    .intro {
         height: 400px;
     }
-}
-@media (max-width:600px) {
-    .intro{
-        height: 300px;
+
+    .intro_text {
+        margin: 20px auto;
+    }
+
+    .btn {
+        padding: 12px 30px;
+    }
+
+    .nav_link span {
+        padding: 30px 6px;
+    }
+
+    .nav_logo img {
+        width: 80px;
+    }
+
+    .nav_logo {
+        font-size: 16px;
+    }
+
+    .intro_title {
+        font-size: 40px;
     }
 }
-@media (max-width:400px) {
-    .intro{
+
+@media(max-width:700px) {
+
+    .widow {
+        height: 400px;
+    }
+
+    .widow_title {
+        width: 300px;
+    }
+
+    .intro {
+        height: 300px;
+    }
+
+    .nav_box {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        position: fixed;
+        padding: 15px 0;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: #ffffff45;
+        backdrop-filter: blur(10px);
+        z-index: 99;
+    }
+
+    .nav_mobile_link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_mobile_link img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    .game{
+        height: 300px;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    .game_title{
+        font-size: 30px;
+    }
+    .game_text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        overflow-y: scroll;
+        line-height: 140%;
+    }
+    .game_text::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .widow {
+        height: 300px;
+    }
+
+    .widow_title {
+        width: 270px;
+    }
+
+    .widow_text {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 15px auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .intro {
+        height: 300px;
+    }
+
+    .intro_text {
+        margin: 15px auto;
+        font-size: 15px;
+        line-height: 130%;
+    }
+
+    .intro_title {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+    }
+
+    .header_top {
+        padding: 10px 0;
+    }
+
+    .header_top_img {
+        width: 30px;
+    }
+
+    .header_top_text {
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+
+}
+
+@media(max-width:550px) {
+    .series_box{
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        gap: 15px;
+        margin-top: 15px;
+        padding-bottom: 5px;
+        margin-bottom: 70px;
+    }
+    .series_card{
+        width: 220px;
+        flex-shrink: 0;
+        min-height: 160px;
+        gap: 5px;
+    }
+    .series_play img{
+        width: 33px;
+    }
+    .series_title{
+        font-size: 20px;
+    }
+    .film_box {
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        gap: 15px;
+    }
+
+    .film_card {
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width:450px) {
+    .widow {
+        height: 250px;
+    }
+
+    .widow_title {
+        width: 200px;
+    }
+
+    .widow_text {
+        font-size: 15px;
+        line-height: 130%;
+        margin: 10px auto;
+    }
+
+    .title {
+        margin: 10px auto;
+        font-size: 24px;
+    }
+
+    .intro_text {
+        margin: 10px auto;
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .intro_title {
+        font-size: 26px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:500px) {
+    .game{
+        height: 250px;
+        gap: 10px;
+    }
+    .game_title{
+        font-size: 27px;
+    }
+    .game_text{
+        font-size: 15px;
+        line-height: 130%;
+    }
+}
+@media(max-width:400px) {
+    .game{
         height: 200px;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    .game_title{
+        font-size: 23px;
+    }
+    .game_text{
+        font-size: 14px;
+        -webkit-line-clamp: 4;
+    }
+    .intro_text {
+        -webkit-line-clamp: 3;
+    }
+
+    .intro {
+        height: 200px;
+    }
+
+    .nav_mobile_link {
+        font-size: 12px;
     }
 }

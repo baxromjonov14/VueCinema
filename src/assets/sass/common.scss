@@ -132,6 +132,9 @@ body {
             transform: scale(1);
         }
     }
+    &_mobile {
+        display: none;
+    }
 }
 
 .btn {
